@@ -7,22 +7,51 @@
     <title>calcolo del prezzo del biglietto del treno</title>
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="https://w1.pngwing.com/pngs/136/126/png-transparent-javascript-logo-angularjs-nodejs-computer-programming-web-development-computer-software-jquery-yellow-thumbnail.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-    <form>
-        <label for="km">Quanti chilometri vuoi percorrere?</label> <br>
-        <input type="text" id="km" inputmode="numeric">
-        <br> <br>
-        <label for="age">Quanti anni hai?</label> <br>
-        <input type="text" id="age" inputmode="numeric">
-        <br> <br>
-        <button type="button" id="calc">Calcola prezzo biglietto</button>
-    </form>
-    <h1>il prezzo del tuo biglietto è <span id="price"></span> €</h1>
+<section class="main-jumbotron">
+    <div class="container-fluid d-flex justify-content-center">
+        <div class="card mx-4">
+            <form class="p-5 text-center">
+                <label for="name">Come ti chiami?</label> <br>
+                <input type="text" id="name">
+                <br> <br>
+                <label for="km">Quanti chilometri vuoi percorrere?</label> <br>
+                <input type="text" id="km" inputmode="numeric">
+                <br> <br>
+                <label for="age">Quanti anni hai?</label> <br>
+                <input type="text" id="age" inputmode="numeric">
+                <br> <br>
+                <button class="btn btn-outline-warning" type="button" id="calc">Calcola prezzo biglietto</button>
+            </form>
+            <h1 class="px-5 py-2 text-center">Benvenuto/a <span class="name"></span>! 
+                <br>Il prezzo del tuo biglietto è <span id="price"></span> €</h1>
+        </div>
+
+    </div>
+</section>
     
-    
+
+    <!-- Javascript Bootstrap - serve? -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
     <!-- JS -->
     <script type="text/javascript" src="./js/main.js"></script>
+
 </body>
 </html>

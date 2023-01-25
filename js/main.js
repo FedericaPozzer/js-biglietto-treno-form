@@ -7,6 +7,10 @@ button_el.addEventListener("click",
         const travel_km = parseFloat(document.getElementById("km").value);
         const passenger_age = parseInt(document.getElementById("age").value);
 
+        const passenger_name = document.getElementById("name").value;
+        console.log(passenger_name);
+            document.querySelector(".name").innerHTML = passenger_name;
+
         console.log("km: " + travel_km);
         console.log("age: " + passenger_age);
 
@@ -40,6 +44,7 @@ button_el.addEventListener("click",
         } 
         else {
             console.log("Uno o più valori inseriti non sono validi, ricarica la pagina per riprovare.");
+            alert("Uno o più valori inseriti non sono validi, ricarica la pagina per riprovare.");
         };
     }
 )
