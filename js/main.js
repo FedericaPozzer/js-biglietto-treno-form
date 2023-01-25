@@ -1,19 +1,8 @@
-// Scrivere un programma che chieda all'utente:
-// Il numero di chilometri da percorrere
-// Età del passeggero
-// Sulla base di queste informazioni dovrà calcolare il prezzo totale del biglietto di viaggio, secondo le seguenti regole:
-// Il prezzo del biglietto è definito in base ai km(0.21 € al km)
-// Va applicato uno sconto del 20 % per i minorenni
-// Va applicato uno sconto del 40 % per gli over 65.
+// CIAO
 
+const button_el = document.getElementById("calc");
 
-
-const button = document.getElementById("calc");
-
-
-
-
-button.addEventListener("click",
+button_el.addEventListener("click",
     function () {
         const travel_km = parseFloat(document.getElementById("km").value);
         const passenger_age = parseInt(document.getElementById("age").value);
@@ -22,15 +11,15 @@ button.addEventListener("click",
         console.log("age: " + passenger_age);
 
         let ticket_cost = parseFloat((travel_km * 0.21));
-        console.log(ticket_cost);
+        // console.log(ticket_cost);
 
         // CALCOLO SCONTI
             // calcolo il 20%
             const discount_20 = (ticket_cost * 20) / 100;
-            // console.log("sconto 20% " + discount_20);
+                // console.log("sconto 20% " + discount_20);
             // calcolo il 40%
             const discount_40 = (ticket_cost * 40) / 100;
-            // console.log("sconto 40% " + discount_40);
+                // console.log("sconto 40% " + discount_40);
 
         if (!isNaN(passenger_age) && !isNaN(travel_km)) {
             if (passenger_age < 18) {
